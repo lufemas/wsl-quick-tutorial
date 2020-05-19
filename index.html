@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Windows Subsystem for Linux Tutorial</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+  <header>
+    <h1>WSL Tutorial</h1>      
+  </header>
+  <section>
+    <input type="checkbox" id="checkbox-toggle-left" class="checkbox-toggle">
+    <span class="droparrow" id="droparrow-left"><span></span></span>
+    <ul class="nav-list">
+      <li><a class="nav-link" href="#enable-wsl">Enable Windows-Subsystem-Linux (WSL)</a></li>
+        <ul class="sub-nav-list">
+          <li><a class="sub-nav-link" href="#enable-vmp">Enable Windows-Subsystem-Linux (WSL)</a></li>
+        </ul>
+      <li><a class="nav-link" href="#create-user">Create your user</a></li>
+        <ul class="sub-nav-list">
+          <li><a class="sub-nav-link" href="#terminal">(Optional) Install new Windows Terminal</a></li>
+        </ul>
+      <li><a class="nav-link" href="#customizing">Customizing</a></li>
+    </ul>
+  </section>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="enable-wsl">
+    <header>Enable Windows-Subsystem-Linux (WSL)</header>
+    <article>
+      <p>
+        Here is the <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">official documentation page.</a>
+      </p>
+
+      <section class="sub-section" id="enable-vmp">
+        <header>Enable the 'Virtual Machine Platform' optional component</header>
+        <p>Open PowerShell as administrator and the command: <code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart</code></p>
+        <p>Then restart your PC.</p>
+      </section>
+    </article>
+  </section>
+ 
+
+  <section class="main-section" id="install-linux">
+    <header>Install a Linux Distro</header>
+    <article>
+      <p>At Microsoft Store App search for Linux and install any Linux distro, my suggestion is <a href="https://www.microsoft.com/store/apps/9N9TNGVNDL3Q">Ubuntu 18.04 LTS</a></p>
+
+      </article>
+    </section>
+
+
+
+  <section class="main-section" id="create-user">
+    <header>Create your user</header>
+    <article>
+      <p>You will be asked to prove a new account username and password</p>
+      <img src="https://docs.microsoft.com/en-us/windows/wsl/media/ubuntuinstall.png" alt="">
+  
+      <section class="sub-section" id="terminal">
+        <header>(Optional) Install new Windows Terminal</header>
+        <p>Microsoft has a <a href="https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab">new Terminal</a>  with some cool features, you can get it here, but it's optional, you can use the Terminal you like most or even PowerShell or CmdPrompt. A very popular terminal emulator is <a href="https://cmder.net/">Cmder</a></p>
+      </section>
+    </article>
+  </section>
+
+    </article>
+  </section>
+
+
+  <section class="main-section" id="customizing">
+    <header>Customizing</header>
+    <article>
+      <p>Fireship.io has a great article teaching how to <a href="https://fireship.io/lessons/windows-10-for-web-dev/">customizing your terminal.</a></p>
+    </article>
+  </section>
+</main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
