@@ -272,6 +272,26 @@ code {
 }
 
 
+
+.title-source a {
+  color: #333;
+  text-align: right;
+  text-decoration: none;
+}
+
+
+
+.fa-github{
+  font-size: 1.25rem;
+  margin: 0 .35rem;
+  color:var(--title-color);
+}
+
+.title-source strong{
+  color: rgb(216, 216, 216);
+}
+
+
 @media only screen and (min-width: 65rem) {
   body {
     /* display: flex; */
@@ -336,6 +356,24 @@ code {
     padding: 1rem;
     font-size: 1.0rem;
   }
+
+
+.title-source{
+  position: fixed;
+  bottom: 1rem;
+    margin-left: 0rem;
+}
+
+
+.title-source a:hover {
+
+    background-color: var(--code-normal-bg-color);
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+
+
+}
+
 }
 
 @media only screen and (min-width: 90rem) {
